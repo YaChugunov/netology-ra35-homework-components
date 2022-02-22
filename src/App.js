@@ -1,51 +1,13 @@
 import React from 'react';
+import propTypes from 'prop-types';
 import '../css/main.css';
 
-// import ShopItemFunc from './ShopItemFunc';
-import React from 'react';
-
-// Название бренда
-function ItemBrand(props) {
-  const { itemBrand } = props;
-  return <h2>{itemBrand}</h2>;
-}
-// Название товара
-function ItemTitle(props) {
-  const { itemTitle } = props;
-  return <h1>{itemTitle}</h1>;
-}
-// Краткое описание товара
-function ItemDesc(props) {
-  const { itemDesc } = props;
-  return <h3>{itemDesc}</h3>;
-}
-// Полное описание товара
-function ItemDescfull(props) {
-  const { itemDescfull } = props;
-  return <div className="description">{itemDescfull}</div>;
-}
-// Компонент : фото товара
-function ItemImage(props) {
-  const { itemImage } = props;
-  return (
-    <div className="highlight-window mobile">
-      <div className="highlight-overlay"></div>
-    </div>
-  );
-}
-// Компонент : цена и кнопка Купить
-function ItemBuyAction(props) {
-  const { itemBuy } = props;
-  return (
-    <div className="purchase-info">
-      <div className="price">
-        {itemBuy.currency}
-        {itemBuy.price.toFixed(2)}
-      </div>
-      <button>{itemBuy.button}</button>
-    </div>
-  );
-}
+import ItemBrand from './components/ItemBrand';
+import ItemTitle from './components/ItemTitle';
+import ItemDesc from './components/ItemDesc';
+import ItemDescfull from './components/ItemDescfull';
+import ItemImage from './components/ItemImage';
+import ItemBuyAction from './components/ItemBuyAction';
 
 // Основной компонент
 function ShopItemFunc(props) {
@@ -62,6 +24,23 @@ function ShopItemFunc(props) {
     </div>
   );
 }
+
+ShopItemFunc.propTypes = {
+  // brand: propTypes.instanceOf(ItemBrand).isRequired,
+  brand: propTypes.object.isRequired,
+  // title: propTypes.instanceOf(ItemTitle).isRequired,
+  title: propTypes.object.isRequired,
+  // description: propTypes.instanceOf(ItemDesc).isRequired,
+  description: propTypes.object.isRequired,
+  // descriptionFull: propTypes.instanceOf(ItemDescfull).isRequired,
+  descriptionFull: propTypes.object.isRequired,
+  // price: propTypes.instanceOf(ItemBuyAction).isRequired,
+  price: propTypes.object.isRequired,
+  // currency: propTypes.instanceOf(ItemBuyAction).isRequired,
+  currency: propTypes.object.isRequired,
+  // button: propTypes.instanceOf(ItemBuyAction).isRequired,
+  button: propTypes.object.isRequired,
+};
 
 // Исходные данные и финальный рендеринг
 export default function App() {
