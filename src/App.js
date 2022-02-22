@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypesfrom from 'prop-types';
 import '../css/main.css';
 
-import ItemBrand from '../components/ItemBrand';
-import ItemTitle from '../components/ItemTitle';
-import ItemDesc from '../components/ItemDesc';
-import ItemDescfull from '../components/ItemDescfull';
-import ItemImage from '../components/ItemImage';
-import ItemBuyAction from '../components/ItemBuyAction';
+import ItemBrand from './components/ItemBrand';
+import ItemTitle from './components/ItemTitle';
+import ItemDesc from './components/ItemDesc';
+import ItemDescfull from './components/ItemDescfull';
+import ItemImage from './components/ItemImage';
+import ItemBuyAction from './components/ItemBuyAction';
 
 // Основной компонент
 function ShopItemFunc(props) {
@@ -25,15 +25,15 @@ function ShopItemFunc(props) {
   );
 }
 
-ShopItemFunc.propTypes = {
-  brand: PropTypes.instanceOf(item).isRequired,
-  title: PropTypes.instanceOf(item).isRequired,
-  description: PropTypes.instanceOf(item).isRequired,
-  descriptionFull: PropTypes.instanceOf(item).isRequired,
-  price: PropTypes.instanceOf(item).isRequired,
-  currency: PropTypes.instanceOf(item).isRequired,
-  button: PropTypes.instanceOf(item).isRequired,
-};
+// ShopItemFunc.propTypes = {
+//   brand: PropTypes.instanceOf(item).isRequired,
+//   title: PropTypes.instanceOf(item).isRequired,
+//   description: PropTypes.instanceOf(item).isRequired,
+//   descriptionFull: PropTypes.instanceOf(item).isRequired,
+//   price: PropTypes.instanceOf(item).isRequired,
+//   currency: PropTypes.instanceOf(item).isRequired,
+//   button: PropTypes.instanceOf(item).isRequired,
+// };
 
 // Исходные данные и финальный рендеринг
 export default function App() {

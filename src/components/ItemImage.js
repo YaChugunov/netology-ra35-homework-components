@@ -1,3 +1,5 @@
+import React from 'react';
+
 // Компонент : фото товара
 function ItemImage(props) {
   const { itemImage } = props;
@@ -7,3 +9,5 @@ function ItemImage(props) {
     </div>
   );
 }
+
+export default ItemImage;

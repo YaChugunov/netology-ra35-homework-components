@@ -1,3 +1,5 @@
+import React from 'react';
+
 // Компонент : цена и кнопка Купить
 function ItemBuyAction(props) {
   const { itemBuy } = props;
@@ -11,3 +13,5 @@ function ItemBuyAction(props) {
     </div>
   );
 }
+
+export default ItemBuyAction;
