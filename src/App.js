@@ -1,4 +1,7 @@
 import React from 'react';
+import PropTypesfrom from 'prop-types';
+
+import ItemShop from '../classes/classItem';
 import '../css/main.css';
 
 // import ShopItemFunc from './ShopItemFunc';
@@ -62,6 +65,9 @@ function ShopItemFunc(props) {
     </div>
   );
 }
+// ShopItemFunc.propTypes = {
+//   brand: PropTypes.instanceOf(item).isRequired,
+// };
 
 // Исходные данные и финальный рендеринг
 export default function App() {
