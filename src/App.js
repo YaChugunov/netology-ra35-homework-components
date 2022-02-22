@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import '../css/main.css';
 
 import ItemBrand from './components/ItemBrand';
@@ -25,14 +25,14 @@ function ShopItemFunc(props) {
   );
 }
 
-ShopItemFunc.PropTypes = {
-  brand: PropTypes.instanceOf(ItemBrand).isRequired,
-  title: PropTypes.instanceOf(item).isRequired,
-  description: PropTypes.instanceOf(item).isRequired,
-  descriptionFull: PropTypes.instanceOf(item).isRequired,
-  price: PropTypes.instanceOf(item).isRequired,
-  currency: PropTypes.instanceOf(item).isRequired,
-  button: PropTypes.instanceOf(item).isRequired,
+ShopItemFunc.propTypes = {
+  brand: propTypes.instanceOf(ItemBrand).isRequired,
+  title: propTypes.instanceOf(ItemTitle).isRequired,
+  description: propTypes.instanceOf(ItemDesc).isRequired,
+  descriptionFull: propTypes.instanceOf(ItemDescfull).isRequired,
+  price: propTypes.instanceOf(ItemBuyAction).isRequired,
+  currency: propTypes.instanceOf(ItemBuyAction).isRequired,
+  button: propTypes.instanceOf(ItemBuyAction).isRequired,
 };
 
 // Исходные данные и финальный рендеринг
