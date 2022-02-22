@@ -24,8 +24,15 @@ function ShopItemFunc(props) {
     </div>
   );
 }
+
 ShopItemFunc.propTypes = {
-  brand: PropTypes.instanceOf(shopItem).isRequired,
+  brand: PropTypes.instanceOf(item).isRequired,
+  title: PropTypes.instanceOf(item).isRequired,
+  description: PropTypes.instanceOf(item).isRequired,
+  descriptionFull: PropTypes.instanceOf(item).isRequired,
+  price: PropTypes.instanceOf(item).isRequired,
+  currency: PropTypes.instanceOf(item).isRequired,
+  button: PropTypes.instanceOf(item).isRequired,
 };
 
 // Исходные данные и финальный рендеринг
