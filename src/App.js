@@ -26,13 +26,20 @@ function ShopItemFunc(props) {
 }
 
 ShopItemFunc.propTypes = {
-  brand: propTypes.instanceOf(ItemBrand).isRequired,
-  title: propTypes.instanceOf(ItemTitle).isRequired,
-  description: propTypes.instanceOf(ItemDesc).isRequired,
-  descriptionFull: propTypes.instanceOf(ItemDescfull).isRequired,
-  price: propTypes.instanceOf(ItemBuyAction).isRequired,
-  currency: propTypes.instanceOf(ItemBuyAction).isRequired,
-  button: propTypes.instanceOf(ItemBuyAction).isRequired,
+  // brand: propTypes.instanceOf(ItemBrand).isRequired,
+  brand: propTypes.object.isRequired,
+  // title: propTypes.instanceOf(ItemTitle).isRequired,
+  title: propTypes.object.isRequired,
+  // description: propTypes.instanceOf(ItemDesc).isRequired,
+  description: propTypes.object.isRequired,
+  // descriptionFull: propTypes.instanceOf(ItemDescfull).isRequired,
+  descriptionFull: propTypes.object.isRequired,
+  // price: propTypes.instanceOf(ItemBuyAction).isRequired,
+  price: propTypes.object.isRequired,
+  // currency: propTypes.instanceOf(ItemBuyAction).isRequired,
+  currency: propTypes.object.isRequired,
+  // button: propTypes.instanceOf(ItemBuyAction).isRequired,
+  button: propTypes.object.isRequired,
 };
 
 // Исходные данные и финальный рендеринг
